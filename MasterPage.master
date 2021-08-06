@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SVTI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Humanity Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+<style>
+
+/*--event grid--*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) 
+{
+.row
+{
+    margin-left:150px;
+    margin-top:10px;
+    }
+        .modal-body
+    {
+        margin-right:100px;
+        }
+    }
+</style>
+<script src="js/jquery.min.js"></script>
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+		</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+<!--head-->
+	<div class="head" id="home">
+		<div class="container">
+			<div class="head-top">
+				<div class="col-md-6 h-left">
+					<p>+91-9452794535 , +91-8707460380</p>
+				</div>
+				<div class="col-md-6 h-right">
+					<ul>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="pin"> </span></a></li>
+						<li><a href="#"><span class="rss"> </span></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>	
+		</div>
+	</div>
+	<!--head-->
+	<!--header-->	
+	<div class="header">
+		<div class="container">
+			<div class="header-main">
+				<div class="logo">
+					<a href="index.aspx"><h1><img src="images/logo.png"  />S V T I</h1></a>
+				</div>
+				<div class="head-right">	   		
+					<div class="top-nav">
+						<span class="menu"><img src="images/nav-icon.png" alt=""> </span>
+						<ul>
+							<li><a href="index.aspx"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+							<li><a href="about.aspx"><span class="glyphicon glyphicon-info-sign"></span>About</a></li>
+                            <li><a href="aim_mission.aspx"><span class="glyphicon glyphicon-info-sign"></span>Aim & Mission</a></li>							
+							<li><a href="our_center.aspx"><span class="glyphicon glyphicon-certificate"></span>Our Center</a></li>	
+							<li><a href="events.aspx"><span class="glyphicon glyphicon-picture"></span>Our Event</a></li>
+                            <li><a href="team.aspx"><span class="glyphicon glyphicon-info-sign"></span>Our Team</a></li>							
+							<li><a href="donate.aspx"><span class="glyphicon glyphicon-certificate"></span>Donate</a></li>	
+							<li><a href="gallary.aspx"><span class="glyphicon glyphicon-picture"></span>Gallery</a></li>								
+							<li><a href="contact.aspx"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+							<div class="clearfix"> </div>
+						</ul>
+						<!--script-->
+					<script>
+					    $("span.menu").click(function () {
+					        $(".top-nav ul").slideToggle(500, function () {
+					        });
+					    });
+					</script>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>	
+		</div>
+	</div>
+	<!--//header-->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+<!--footer-starts-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<a href="index.html"><img src="images/logo.png"  /><h3>Saumya Vocational & Training Institute</h3></a>
+				<p>© 2019 S V T I. All Rights Reserved | Design by  <a href="http://vcinfo-tech.com/" target="_blank">VC INFO-TECH</a> </p>
+				<a href="#home" class="scroll"><img src="images/top-arrow.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	<!--footer-end-->
+    </div>
+    </form>
+</body>
+</html>
